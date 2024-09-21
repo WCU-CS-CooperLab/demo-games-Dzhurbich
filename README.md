@@ -12,4 +12,4 @@ these are the listing of games
 
 ## Game Projects 
 
-[Coin Dash Phase 1](coin_dash_phase_1/)
+[Coin Dash Phase 1](https://wcu-cs-cooperlab.github.io/demo-games-Dzhurbich/coin_dash_phase1/index.html)
