@@ -1,9 +1,9 @@
 # GamePublish
+
 A template repository to publish games
 
-### Class Publishing Demos 
-[Player Scene Aug 29/](\player_scene_08_29)
+### Class Publishing Demos
 
-## Game Projects 
+[Player Scene Aug 29/](player_scene_08_29/)
 
-
+## Game Projects
