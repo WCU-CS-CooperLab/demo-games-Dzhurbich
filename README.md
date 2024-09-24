@@ -2,7 +2,7 @@
 A template repository to publish games
 
 ### Class Publishing Demos 
-[Player Scene Aug 28/](\player_scene_08_28)
+[Player Scene Aug 29/](\player_scene_08_29)
 
 ## Game Projects 
 
