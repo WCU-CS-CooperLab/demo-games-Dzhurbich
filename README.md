@@ -14,4 +14,4 @@ A template repository to publish games
 
 ## Game Projects
 
-[Project-1-Phase-1](Project-I-Phase-I\)
+[Project-1-Phase-1](Project-I-Phase-I)
