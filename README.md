@@ -8,6 +8,8 @@ A template repository to publish games
 
 [Player Scene Sept 04](main_scene_09_04/)
 
-[Player Scene with HUD Sept 06](main_scene_with_hud_09_06)
+[Main Scene with HUD Sept 06](main_scene_with_hud_09_06)
+
+[Main Scene Completed](main_scene_with_hud_final_09_10)
 
 ## Game Projects
