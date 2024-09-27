@@ -15,4 +15,4 @@ A template repository to publish games
 ## Game Projects
 
 [Project-1-Phase-1](Project-I-Phase-I)
-[Project-I-Phase-II without cactus](Project-I-Phase-II)
+[Project-I-Phase-II without cactus](project-without-cactus/)
