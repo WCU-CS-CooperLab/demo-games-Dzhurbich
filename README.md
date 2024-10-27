@@ -2,7 +2,9 @@
 
 A template repository to publish games
 
-### Class Publishing Demos
+## Class Publishing Demos
+
+### Coin Dash Game
 
 [Player Scene Aug 29/](player_scene_08_29/)
 
@@ -11,6 +13,8 @@ A template repository to publish games
 [Main Scene with HUD Sept 06](main_scene_with_hud_09_06)
 
 [Main Scene Completed](main_scene_with_hud_final_09_10)
+
+### Space Rocks
 
 ## Game Projects
 
