@@ -6,7 +6,7 @@
 
 [Main Scene Sept 4](main_scene_09_04/index.html)
 
-[Main Scene with ]
+[Main Scene with HUD](main_scene_09_04/index.html)
 
 ### Group Projects
 
