@@ -20,3 +20,6 @@ A template repository to publish games
 
 [Project-1-Phase-1](Project-I-Phase-I)
 [Project-I-Phase-II without cactus](project-without-cactus/)
+
+### Team Project #1 
+[Team-Project-1](demo-games-Dzhurbich\Team-project-1\index.html)
