@@ -22,4 +22,4 @@ A template repository to publish games
 [Project-I-Phase-II without cactus](project-without-cactus/)
 
 ### Team Project #1 
-[Team-Project-1](demo-games-Dzhurbich\Team-project-1\index.html)
+[Team-Project-1]("Team-group-project-1/index.html")
