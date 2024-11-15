@@ -4,7 +4,7 @@
 
 [Player Scene Aug 30](player_scene_08_30/index.html)
 
-[Main Scene Sept 4]
+[Main Scene Sept 4](main_scene_09_04/index.html)
 
 [Main Scene with ]
 
