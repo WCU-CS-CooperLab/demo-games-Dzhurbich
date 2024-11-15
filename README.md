@@ -1,4 +1,6 @@
-### Class Publish Games
+## Class Publish Games
+
+### Coin Dash Game
 
 [Player Scene Aug 29](player_scene_08_29/index.html)
 
@@ -8,7 +10,7 @@
 
 [Main Scene with HUD Sept 6](main_scene_with_hud_09_06/index.html)
 
-[Main Scene Finished Sept 7](main_scene_09_06)
+[Main Scene Finished Sept 7](main_scene_finished_09_07/index.html)
 
 ### Group Projects
 
