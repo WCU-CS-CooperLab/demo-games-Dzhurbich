@@ -18,7 +18,7 @@
 
 [Space Rocks and Main Sept 11](Space_rocks_hud_09_11/index.html)
 
-[Player Scene Sept 13]
+[Player Scene Sept 13](space_rocks_with_hud_09_13/index.html)
 
 [Player Scene Sept 16]
 
