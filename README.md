@@ -22,9 +22,9 @@
 
 [Player Scene Sept 16](sr_main_works_09_16/index.html)
 
-[Space Rocks main with enemy](sr_main_with_enemy_09_16a/index.html)
+[Space Rocks main with enemy Sept 16](sr_main_with_enemy_09_16a/index.html)
 
-[Space Rocks with damage enemies]()
+[Space Rocks with damage enemies Sept 16]()
 
 ### Group Projects
 
