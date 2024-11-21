@@ -36,7 +36,7 @@
 
 [Space Rocks With particles Sep 20](sr-w-particles_09_20/index.html)
 
-[Space Rocks completed Sept 20]()
+[Space Rocks completed Sept 20](space_rocks_completed_09_20/index.html)
 
 ### Individual Projects
 
