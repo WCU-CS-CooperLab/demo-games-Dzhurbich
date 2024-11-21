@@ -34,7 +34,7 @@
 
 ### Individual Projects
 
-[Project-1-Phase-1](Project-I-Phase-I/index.html)'
+[Project-1-Phase-1](project-1-phase-1/index.html)
 
 [Project-2-Phase-2]
 
