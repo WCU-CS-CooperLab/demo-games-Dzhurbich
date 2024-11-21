@@ -32,6 +32,12 @@
 
 [Space Rocks Finished with particles Sept 20](sr_finished_09_20/index.html)
 
+### Individual Projects
+
+[Project-1-Phase-1](Project-I-Phase-I/index.html)'
+
+[Project-2-Phase-2]
+
 ### Group Projects
 
 [Team-Project-01](Team-Project-1/index.html)
