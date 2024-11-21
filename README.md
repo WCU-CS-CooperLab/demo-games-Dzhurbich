@@ -20,7 +20,11 @@
 
 [Player Scene Sept 13](space_rocks_with_hud_09_13/index.html)
 
-[Player Scene Sept 16]
+[Player Scene Sept 16](sr_main_works_09_16/index.html)
+
+[Space Rocks main with enemy](sr_main_with_enemy_09_16a/index.html)
+
+[Space Rocks with damage enemies]()
 
 ### Group Projects
 
