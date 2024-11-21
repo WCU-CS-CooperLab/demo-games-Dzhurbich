@@ -28,6 +28,8 @@
 
 [Space Rocks with Shield Sept 18](sr_main_with_shield_09_16c/index.html)
 
+[Space Rocks with sound Sept 20]
+
 ### Group Projects
 
 [Team-Project-01](Team-Project-1/index.html)
