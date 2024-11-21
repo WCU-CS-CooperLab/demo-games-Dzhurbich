@@ -28,7 +28,9 @@
 
 [Space Rocks with Shield Sept 18](sr_main_with_shield_09_16c/index.html)
 
-[Space Rocks with sound Sept 20]
+[Space Rocks with sound Sept 18](sr_with_sound_09_18/index.html)
+
+[Space Rocks Finished with particles Sept 20]()
 
 ### Group Projects
 
