@@ -34,7 +34,7 @@
 
 [Space Rocks with sound Sept 18](sr_with_sound_09_18/index.html)
 
-[Space Rocks Finished with particles Sept 20](sr-finished-w-sound-particles_09_20index.html)
+[Space Rocks Finished with particles Sept 20](sr-finished-w-sound-particles_09_20/index.html)
 
 ### Individual Projects
 
