@@ -26,7 +26,7 @@
 
 [Space Rocks with damage enemies Sept 16](sr_main_with_damage_enemies_09_16b/index.html)
 
-[Space Rocks with Shield Sept 16](sr_main_with_shield_09_16c/index.html)
+[Space Rocks with Shield Sept 18](sr_main_with_shield_09_16c/index.html)
 
 ### Group Projects
 
