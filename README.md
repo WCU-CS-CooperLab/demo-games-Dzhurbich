@@ -4,6 +4,14 @@
 
 1. [CoinDash](project-1-phase-1/index.html)
 
+2. [SpaceRocks]()
+
+3. [MiniGolf 3D]()
+
+4. [Jungle Jump]()
+
+5. [Infinite Flyer]()
+
 ### Coin Dash Game
 
 [Player Scene Aug 29](player_scene_08_29/index.html)
@@ -45,6 +53,28 @@
 [3D Mini Golf Ball, Arrow, UI, Scripting Sept 25](3D_Mini_Golf_Ball_Arrow_09_25/index.html)
 
 [3D Mini Golf Finishing up the hole script Sept 27](3D_Mini_Golf_finished_09_30/index.html)
+
+### Jungle Jump
+
+[Jungle Jump Player and Main Scene Sept 30](jungle-jump-jungle_jump_and_main_09_30/index.html)
+
+[Jungle Jump Base Level and Items Oct 2](jungle-jump-jungle_jump_item_base_level_10_02/index.html)
+
+[Jungle Jump First Level Oct 4](jungle-jump-/jungle_jump_first_level_10_04/index.html)
+
+[Jungle Jump Scrolling Background Oct 7]()
+
+### Infinite Flyer
+
+[Jungle Jump Player and Main Scene]()
+
+[Jungle Jump Items, base level]()
+
+[Jungle Jump First Level]()
+
+[Jungle Jump Scrolling background]()
+
+[Jungle Jump Game UI]()
 
 ### Individual Projects
 
