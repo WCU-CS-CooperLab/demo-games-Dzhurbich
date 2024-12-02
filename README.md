@@ -56,11 +56,11 @@
 
 ### Jungle Jump
 
-[Jungle Jump Player and Main Scene Sept 30](jungle-jump-jungle_jump_and_main_09_30/index.html)
+[Jungle Jump Player and Main Scene Sept 30](jungle_jump_and_main_09_30/index.html)
 
-[Jungle Jump Base Level and Items Oct 2](jungle-jump-jungle_jump_item_base_level_10_02/index.html)
+[Jungle Jump Base Level and Items Oct 2]()
 
-[Jungle Jump First Level Oct 4](jungle-jump-/jungle_jump_first_level_10_04/index.html)
+[Jungle Jump First Level Oct 4](jungle_jump_first_level_10_04/index.html)
 
 [Jungle Jump Scrolling Background Oct 7]()
 
