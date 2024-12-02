@@ -42,7 +42,9 @@
 
 [3D Mini Golf Adding the First Hole Sept 23](3D_golf_first_hole_09_23/index.html)
 
-[3D Mini Golf Ball, Arrow, UI, Scripting](3D_Mini_Golf_Ball_Arrow_09_25/index.html)
+[3D Mini Golf Ball, Arrow, UI, Scripting Sept 25](3D_Mini_Golf_Ball_Arrow_09_25/index.html)
+
+[3D Mini Golf Finishing up the hole script Sept 27](3D_Mini_Golf_finished_09_30/index.html)
 
 ### Individual Projects
 
