@@ -66,15 +66,11 @@
 
 ### Infinite Flyer
 
-[Jungle Jump Player and Main Scene]()
+[Infinite Flyer: Airplane Scene Oct 11](infinite_plane_scene_10_11/index.html)
 
-[Jungle Jump Items, base level]()
+[Infinite Flyer: Building the World Oct 16](infinite_plane_buildig_scene_10_16/index.html)
 
-[Jungle Jump First Level]()
-
-[Jungle Jump Scrolling background]()
-
-[Jungle Jump Game UI]()
+[Infinite Flyer: Main Scene Oct 18](infinite_main_scene_10_18/index.html)
 
 ### Individual Projects
 
