@@ -82,9 +82,9 @@
 
 #### Project 2
 
-[Project-2-phase-1]()
+[Project-2-phase-1](infinite_main_scene_10_18/index.html)
 
-[Project-2-phase-2]()
+[Project-2-phase-2](Project-2-Phase-II/index.html)
 
 ### Group Projects
 
