@@ -74,9 +74,17 @@
 
 ### Individual Projects
 
+#### Project 1
+
 [Project-1-Phase-1](project-1-phase-1/index.html)
 
-[Project-2-Phase-2]
+[Project-1-Phase-2]
+
+#### Project 2
+
+[Project-2-phase-1]()
+
+[Project-2-phase-2]()
 
 ### Group Projects
 
