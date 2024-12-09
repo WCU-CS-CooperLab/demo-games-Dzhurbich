@@ -84,7 +84,7 @@
 
 [Project-2-phase-1](infinite_main_scene_10_18/index.html)
 
-[Project-2-phase-2](Project-2-Phase-II/index.html)
+[Project-2-phase-2](project-1-phase-II/index.html)
 
 ### Group Projects
 
