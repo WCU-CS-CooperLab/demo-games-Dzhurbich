@@ -1,0 +1,15 @@
+res://assets/plane.tscn
+res://buildings/building_1.tscn
+res://buildings/building_2.tscn
+res://buildings/building_3.tscn
+res://buildings/building_4.tscn
+res://buildings/building_5.tscn
+res://assets/ring.tscn
+res://chunk.tscn
+res://main.tscn
+res://ui.tscn
+res://control.tscn
+res://cartoon_plane.tscn
+res://bulllet.tscn
+res://assets/plane.gd
+res://day_night_cycle.tscn

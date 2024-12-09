@@ -1,0 +1,79 @@
+[gd_scene load_steps=13 format=3 uid="uid://cgy80y67x2wh5"]
+
+[ext_resource type="Script" path="res://assets/plane.gd" id="1_0kvm2"]
+[ext_resource type="PackedScene" uid="uid://c1irmdltpb7wo" path="res://assets/cartoon_plane.glb" id="1_n5l77"]
+[ext_resource type="PackedScene" uid="uid://b3doio5qr6sn5" path="res://bulllet.tscn" id="2_ap8pi"]
+[ext_resource type="Texture2D" uid="uid://ggwbqf7hpj" path="res://assets/smoke/smoke_01.png" id="3_xyeem"]
+[ext_resource type="Texture2D" uid="uid://c7fl6ovqdxmls" path="res://assets/smoke/smoke_02.png" id="4_ysw0a"]
+[ext_resource type="Texture2D" uid="uid://cf38g27lc27kr" path="res://assets/smoke/smoke_03.png" id="5_k07ul"]
+[ext_resource type="Texture2D" uid="uid://ntu50mx2rotx" path="res://assets/smoke/smoke_04.png" id="6_phhys"]
+[ext_resource type="Texture2D" uid="uid://baf6obl0gn2wk" path="res://assets/smoke/smoke_05.png" id="7_o5iug"]
+[ext_resource type="AudioStream" uid="uid://er8ewx4obcwf" path="res://assets/audio/impact.wav" id="8_122ox"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_glbuo"]
+height = 4.0
+radius = 1.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kmv2w"]
+size = Vector3(7, 1, 2)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nn1ov"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_xyeem")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ysw0a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_k07ul")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_phhys")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_o5iug")
+}],
+"loop": false,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="Plane" type="CharacterBody3D"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
+collision_layer = 3
+script = ExtResource("1_0kvm2")
+bullet_scene = ExtResource("2_ap8pi")
+
+[node name="cartoon_plane" parent="." instance=ExtResource("1_n5l77")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
+
+[node name="AnimationPlayer" parent="cartoon_plane" index="6"]
+autoplay = "prop_spin"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+shape = SubResource("CylinderShape3D_glbuo")
+
+[node name="WingCollision" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.5)
+shape = SubResource("BoxShape3D_kmv2w")
+
+[node name="Explosion" type="AnimatedSprite3D" parent="."]
+visible = false
+pixel_size = 0.5
+billboard = 1
+sprite_frames = SubResource("SpriteFrames_nn1ov")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_122ox")
+
+[node name="RightMuzzle" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2)
+
+[node name="LeftMuzzle" type="Marker3D" parent="."]
+transform = Transform3D(1.035, 0, 0, 0, 1.035, 0, 0, 0, 1.035, -2, 0, -2)
+gizmo_extents = 0.39
+
+[editable path="cartoon_plane"]
