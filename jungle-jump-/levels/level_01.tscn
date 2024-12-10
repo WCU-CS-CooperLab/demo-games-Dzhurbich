@@ -1,0 +1,34 @@
+[gd_scene load_steps=2 format=3 uid="uid://cflolf07gyuge"]
+
+[ext_resource type="PackedScene" uid="uid://he8qpmdwvfc4" path="res://levels/level_base.tscn" id="1_af2ln"]
+
+[node name="Level01" instance=ExtResource("1_af2ln")]
+
+[node name="ParallaxLayer" parent="ParallaxBackground" index="0"]
+position = Vector2(-317, -20)
+
+[node name="Sprite2D" parent="ParallaxBackground/ParallaxLayer" index="0"]
+position = Vector2(-262, -181)
+
+[node name="ParallaxLayer2" parent="ParallaxBackground" index="1"]
+position = Vector2(2, -23)
+motion_mirroring = Vector2(880, 0)
+
+[node name="Sprite2D" parent="ParallaxBackground/ParallaxLayer2" index="0"]
+position = Vector2(13, 99)
+region_rect = Rect2(0, 0, 1320.77, 368)
+
+[node name="World" parent="." index="1"]
+layer_0/tile_data = PackedInt32Array(65520, 196608, 1, 65521, 65536, 1, 65522, 327680, 1, 65523, 196608, 1, 65524, 65536, 1, 65525, 196608, 1, -5, 1245184, 1, -65539, 65536, 1, -65538, 65536, 1, -65537, 65536, 1, 65529, 1245184, 1, 65528, 196608, 1, 65527, 65536, 1, 65526, 327680, 1, 131056, 65536, 3, 131057, 65536, 3, 131058, 65536, 3, 131059, 65536, 3, 131060, 65536, 3, 131061, 65536, 3, 131062, 65536, 3, 131063, 65536, 3, 131064, 65536, 3, 131065, 65536, 3, 131066, 65536, 3, 65531, 65536, 3, 131067, 65536, 3, 131068, 65536, 3, 65532, 65536, 3, 65533, 65536, 3, -3, 65536, 3, -2, 65536, 3, -1, 65536, 3, -65536, 65536, 3, -65535, 65536, 3, -65534, 65536, 3, -65533, 65536, 3, -65532, 65536, 3, -131072, 65536, 1, -131071, 65536, 1, -131070, 65536, 1, -131069, 65536, 1, -131068, 65536, 1, -131067, 65536, 1, -131066, 65536, 1, -131065, 65536, 1, -131064, 65536, 1, -131063, 65536, 1, -131062, 65536, 1, -131061, 65536, 1, -131060, 65536, 1, -65523, 1441792, 1, 15, 1441792, 1, -393206, 1245185, 1, -196605, 458753, 2, -11, 393217, 7, -9, 393217, 7, -131074, 393217, 7, -196608, 393217, 7, -196602, 393217, 7)
+
+[node name="Items" parent="." index="2"]
+layer_0/tile_data = PackedInt32Array(-327679, 0, 0, -327675, 0, 0, -131057, 1, 0)
+
+[node name="Danger" parent="." index="3" groups=["danger"]]
+layer_0/tile_data = PackedInt32Array(-10, 589824, 12)
+
+[node name="Player" parent="." index="4"]
+position = Vector2(-224, -20)
+
+[node name="SpawnPoint" parent="." index="5"]
+position = Vector2(-220, -8)

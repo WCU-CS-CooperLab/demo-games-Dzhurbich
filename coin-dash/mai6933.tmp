@@ -1,0 +1,57 @@
+[gd_scene load_steps=10 format=3 uid="uid://ddle4u3t8h8fw"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_oh6kh"]
+[ext_resource type="Texture2D" uid="uid://cnp5npq8as8x8" path="res://assets/grass.png" id="2_wgrpk"]
+[ext_resource type="PackedScene" uid="uid://clxt8i65317vo" path="res://player.tscn" id="3_dvx6a"]
+[ext_resource type="PackedScene" uid="uid://dxajrgn2dr8m8" path="res://coin.tscn" id="3_elowb"]
+[ext_resource type="PackedScene" uid="uid://cn2uvd330u6qj" path="res://hud.tscn" id="5_y5mrm"]
+[ext_resource type="AudioStream" uid="uid://bggcefdvw1wvu" path="res://assets/audio/Coin.wav" id="6_5wu8t"]
+[ext_resource type="AudioStream" uid="uid://bd7ahbchincqk" path="res://assets/audio/Level.wav" id="7_o6moi"]
+[ext_resource type="AudioStream" uid="uid://c241r4fc5kf6q" path="res://assets/audio/EndSound.wav" id="8_7japd"]
+[ext_resource type="AudioStream" uid="uid://da3ltvo3up4ru" path="res://assets/audio/Powerup.wav" id="9_f8lhi"]
+
+[node name="Main" type="Area2D"]
+script = ExtResource("1_oh6kh")
+coin_scene = ExtResource("3_elowb")
+metadata/_edit_group_ = true
+
+[node name="Background" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -32.0
+offset_top = -32.0
+offset_right = 514.0
+offset_bottom = 745.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_wgrpk")
+stretch_mode = 1
+
+[node name="Player" parent="." instance=ExtResource("3_dvx6a")]
+speed = null
+
+[node name="GameTimer" type="Timer" parent="."]
+
+[node name="HUD" parent="." instance=ExtResource("5_y5mrm")]
+
+[node name="CoinSound" type="AudioStreamPlayer" parent="." groups=["coins"]]
+stream = ExtResource("6_5wu8t")
+
+[node name="LevelSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_o6moi")
+
+[node name="EndSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_7japd")
+
+[node name="PowerUpTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="PowerUpSound" type="AudioStreamPlayer" parent="PowerUpTimer"]
+stream = ExtResource("9_f8lhi")
+
+[connection signal="hurt" from="Player" to="." method="_on_player_hurt"]
+[connection signal="pickup" from="Player" to="." method="_on_player_pickup"]
+[connection signal="timeout" from="GameTimer" to="." method="_on_game_timer_timeout"]
+[connection signal="start_game" from="HUD" to="." method="_on_hud_start_game"]
+[connection signal="timeout" from="PowerUpTimer" to="." method="_on_power_up_timer_timeout"]

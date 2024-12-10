@@ -1,0 +1,14 @@
+AnimationPlayer
+DirectionalLight3D
+WorldEnvironment
+Node3D
+CanvasModulate
+CPUParticles3D
+MeshInstance3D
+CollisionShape3D
+Sprite3D
+Area3D
+VisibleOnScreenNotifier3D
+Marker3D
+VisibleOnScreenEnabler3D
+Label

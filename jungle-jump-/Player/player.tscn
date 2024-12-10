@@ -1,0 +1,140 @@
+[gd_scene load_steps=11 format=3 uid="uid://dkkoldct1q4w4"]
+
+[ext_resource type="Script" path="res://Player/player.gd" id="1_re01e"]
+[ext_resource type="Texture2D" uid="uid://c0t7obcsse1ke" path="res://assets/player_sheet.png" id="2_0xsr3"]
+
+[sub_resource type="Animation" id="Animation_ari3r"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [10]
+}
+
+[sub_resource type="Animation" id="Animation_ro8ge"]
+resource_name = "hurt"
+length = 0.2
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [5, 6]
+}
+
+[sub_resource type="Animation" id="Animation_ji6nl"]
+resource_name = "idle"
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [7, 10]
+}
+
+[sub_resource type="Animation" id="Animation_l3a28"]
+resource_name = "jump_down"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [12, 12]
+}
+
+[sub_resource type="Animation" id="Animation_kn1x2"]
+resource_name = "jump_up"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [11, 11]
+}
+
+[sub_resource type="Animation" id="Animation_6gklr"]
+resource_name = "run"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [13, 18]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_lo7yq"]
+_data = {
+"RESET": SubResource("Animation_ari3r"),
+"hurt": SubResource("Animation_ro8ge"),
+"idle": SubResource("Animation_ji6nl"),
+"jump_down": SubResource("Animation_l3a28"),
+"jump_up": SubResource("Animation_kn1x2"),
+"run": SubResource("Animation_6gklr")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3n8l8"]
+size = Vector2(13, 21)
+
+[node name="Player" type="CharacterBody2D"]
+collision_layer = 3
+collision_mask = 13
+script = ExtResource("1_re01e")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -16)
+texture = ExtResource("2_0xsr3")
+hframes = 19
+frame = 10
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_lo7yq")
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, -10.5)
+shape = SubResource("RectangleShape2D_3n8l8")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(1, 14)
+zoom = Vector2(2.5, 2.5)
+position_smoothing_enabled = true

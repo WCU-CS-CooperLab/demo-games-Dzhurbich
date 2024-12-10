@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://dyaki56goqt2o"]
+
+[ext_resource type="Script" path="res://pause_menu.gd" id="1_n20lf"]
+
+[node name="PauseMenu" type="CanvasLayer"]
+script = ExtResource("1_n20lf")
+
+[node name="Toggle_on_off" type="Button" parent="."]
+offset_left = 154.0
+offset_top = 565.0
+offset_right = 323.0
+offset_bottom = 588.0
+text = "Toggle Music "
+
+[node name="Resume" type="Button" parent="."]
+offset_left = 153.0
+offset_top = 490.0
+offset_right = 327.0
+offset_bottom = 529.0
+text = "Resume"

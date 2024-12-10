@@ -1,0 +1,121 @@
+[gd_scene load_steps=9 format=3 uid="uid://dx3dtk2q0rfoi"]
+
+[ext_resource type="Texture2D" uid="uid://kyb10wojqcgx" path="res://assets/sprites/opossum.png" id="1_f7qhg"]
+[ext_resource type="Script" path="res://enemies/enemy.gd" id="1_fgh1f"]
+[ext_resource type="Texture2D" uid="uid://c51pmebh5y3b5" path="res://assets/sprites/enemy-death.png" id="2_rfj8f"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5v5sc"]
+size = Vector2(21, 16)
+
+[sub_resource type="Animation" id="Animation_57ofe"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_f7qhg")]
+}
+
+[sub_resource type="Animation" id="Animation_e6re0"]
+resource_name = "death"
+length = 0.3
+step = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0, 5]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_rfj8f")]
+}
+
+[sub_resource type="Animation" id="Animation_nt2cp"]
+resource_name = "walk"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0, 5]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.0333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("1_f7qhg"), ExtResource("1_f7qhg")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_nbcou"]
+_data = {
+"RESET": SubResource("Animation_57ofe"),
+"death": SubResource("Animation_e6re0"),
+"walk": SubResource("Animation_nt2cp")
+}
+
+[node name="Enemy" type="CharacterBody2D" groups=["enemies"]]
+collision_layer = 4
+collision_mask = 7
+script = ExtResource("1_fgh1f")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_f7qhg")
+hframes = 6
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 5)
+shape = SubResource("RectangleShape2D_5v5sc")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_nbcou")
+}
+autoplay = "walk"
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
