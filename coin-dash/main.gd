@@ -4,11 +4,16 @@ extends Node
 @export var cactus_scene: PackedScene
 @export var cactus_count: int = 3
 @export var playtime = 30
+
 var level = 1
 var score = 0
 var time_left = 0
 var screensize = Vector2.ZERO
 var playing = false
+var wave_count = 0
+var coins_remaining = 0
+
+var pause_menu: CanvasLayer
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -23,6 +28,7 @@ func new_game():
 	level = 1
 	score = 0
 	time_left = playtime
+	wave_count = 1
 	$Player.start()
 	$Player.show()
 	$GameTimer.start()
@@ -33,12 +39,19 @@ func new_game():
 	
 	
 func spawn_coins():
-	for i in level + 4:
+	coins_remaining = level + 4
+	for i in range(coins_remaining):
 		var c = coin_scene.instantiate()
 		add_child(c)
 		c.screensize = screensize
 		c.position = Vector2(randi_range(0,screensize.x),
 							 randi_range(0, screensize.y))
+	print("Wave: ", wave_count, "Coins Spawned: ", coins_remaining)						
+	
+func spawn_invincibility_coin():
+	var invincibility_coin = preload("res://invincibility_powerup.tscn").instantiate()
+	invincibility_coin.position = Vector2(randi_range(0, screensize.x), randi_range(0, screensize.y))
+	add_child(invincibility_coin)
 		
 	
 func spawn_cactus() -> void:
@@ -46,6 +59,7 @@ func spawn_cactus() -> void:
 		var cactus = cactus_scene.instantiate()
 		add_child(cactus)
 		cactus.position = Vector2(randi_range(0, screensize.x), randi_range(0, screensize.y))
+		cactus.add_to_group("cacti")
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -54,6 +68,7 @@ func _process(delta: float) -> void:
 		time_left += 5
 		spawn_coins()
 		reset_powerup_timer()
+		start_new_wave()
 		
 func reset_powerup_timer():
 	$PowerUpTimer.start()	
@@ -96,7 +111,6 @@ func game_over():
 	$EndSound.play()
 	
 	
-	
 
 
 func _on_hud_start_game() -> void:
@@ -108,3 +122,15 @@ func _on_power_up_timer_timeout() -> void:
 	add_child(p)
 	p.position = Vector2(randi_range(0, screensize.x), randi_range(0, screensize.y)) 
 	
+
+		
+func spawn_invincibility_powerup():
+	var invincibility = preload("res://invincibility_powerup.tscn").instantiate()
+	invincibility.position = Vector2(randi_range(0, screensize.x), randi_range(0, screensize.y))
+	add_child(invincibility)
+	
+func start_new_wave():
+	wave_count += 1  # Increment the wave count
+	print("Starting wave:", wave_count)  # Debug log
+	$HUD.update_wave_count(wave_count)  # Update the HUD label
+	spawn_coins()  # Spawn coins for the new wave

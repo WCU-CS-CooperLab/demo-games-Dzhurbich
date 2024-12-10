@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://cma1a5fbul6fx"]
+[gd_scene load_steps=13 format=3 uid="uid://cma1a5fbul6fx"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_0oxqq"]
 [ext_resource type="PackedScene" uid="uid://cptb7ls8q1cxn" path="res://coin.tscn" id="2_aocwb"]
@@ -11,6 +11,7 @@
 [ext_resource type="AudioStream" uid="uid://bd7ahbchincqk" path="res://assets/audio/Level.wav" id="7_ehlku"]
 [ext_resource type="AudioStream" uid="uid://c241r4fc5kf6q" path="res://assets/audio/EndSound.wav" id="8_x6voc"]
 [ext_resource type="AudioStream" uid="uid://da3ltvo3up4ru" path="res://assets/audio/Powerup.wav" id="9_cd38h"]
+[ext_resource type="AudioStream" uid="uid://c4hfycnacvwac" path="res://stranger-things-124008.mp3" id="12_yg6hc"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_0oxqq")
@@ -33,6 +34,9 @@ metadata/_edit_group_ = true
 [node name="GameTimer" type="Timer" parent="."]
 
 [node name="HUD" parent="." instance=ExtResource("5_gjgnf")]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="HUD"]
+stream = ExtResource("12_yg6hc")
 
 [node name="CoinSound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_kyv2j")

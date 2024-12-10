@@ -1,0 +1,70 @@
+[gd_scene load_steps=13 format=3 uid="uid://cdy3p5oloo0op"]
+
+[ext_resource type="Script" path="res://invincibility_powerup.gd" id="1_r0gfk"]
+[ext_resource type="Texture2D" uid="uid://bercjgltcuwo4" path="res://assets/coin/Silver_11.png" id="2_vfyb0"]
+[ext_resource type="Texture2D" uid="uid://f1smm1epxgr6" path="res://assets/coin/Silver_12.png" id="3_gtj25"]
+[ext_resource type="Texture2D" uid="uid://lyp2408r2ueu" path="res://assets/coin/Silver_13.png" id="4_b6f41"]
+[ext_resource type="Texture2D" uid="uid://buudycfajfn8v" path="res://assets/coin/Silver_15.png" id="5_o61dx"]
+[ext_resource type="Texture2D" uid="uid://chb677nklf5c0" path="res://assets/coin/Silver_16.png" id="6_mogcq"]
+[ext_resource type="Texture2D" uid="uid://bao4uh0o0gy1o" path="res://assets/coin/Silver_17.png" id="7_1d77s"]
+[ext_resource type="Texture2D" uid="uid://b35auh3aq2fww" path="res://assets/coin/Silver_18.png" id="8_twubj"]
+[ext_resource type="Texture2D" uid="uid://7ria0m0c4wjx" path="res://assets/coin/Silver_19.png" id="9_8ykxa"]
+[ext_resource type="Texture2D" uid="uid://bf4k3ywjolrxv" path="res://assets/coin/Silver_20.png" id="10_30ab7"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hl17o"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_vfyb0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_gtj25")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_b6f41")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_o61dx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_mogcq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_1d77s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_twubj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_8ykxa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_30ab7")
+}],
+"loop": true,
+"name": &"powerup",
+"speed": 9.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bpifa"]
+radius = 19.0263
+
+[node name="InvincibilityPowerup" type="Area2D" groups=["invincibility_powerup", "powerup"]]
+script = ExtResource("1_r0gfk")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(4.47035e-07, -0.499999)
+scale = Vector2(0.0679785, 0.0656028)
+sprite_frames = SubResource("SpriteFrames_hl17o")
+animation = &"powerup"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["invincibility_powerup", "powerup"]]
+shape = SubResource("CircleShape2D_bpifa")
+
+[node name="InvincibilityTimer" type="Timer" parent="." groups=["invincibility_powerup", "powerup"]]
+wait_time = 2.0
+one_shot = true
+autostart = true
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="timeout" from="InvincibilityTimer" to="." method="_on_invincibility_timer_timeout"]

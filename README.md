@@ -86,7 +86,9 @@
 
 [Project-2-phase-2](Project-2-Phase-II/index.html)
 
-[Project-3-phase-3]()
+#### Project 3
+
+[Project-3-phase-3](project-3-phase-II/index.html)
 
 ### Group Projects
 
