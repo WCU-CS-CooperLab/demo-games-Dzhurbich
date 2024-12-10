@@ -10,7 +10,7 @@
 
 4. [Jungle Jump]()
 
-5. [Infinite Flyer]()
+5. [Infinite Flyer](Project-2-Phase-II/index.html)
 
 ### Coin Dash Game
 
@@ -93,3 +93,5 @@
 ### Group Projects
 
 [Team-Project-01](Team-Project-1/index.html)
+
+[Team-Project-02]
