@@ -4,11 +4,11 @@
 
 1. [CoinDash](project-1-phase-1/index.html)
 
-2. [SpaceRocks]()
+2. [SpaceRocks](space_rocks_completed_09_20/index.html)
 
-3. [MiniGolf 3D]()
+3. [MiniGolf 3D](3D_Mini_Golf_finished_09_30/index.html)
 
-4. [Jungle Jump]()
+4. [Jungle Jump](final_jungle_jump/index.html)
 
 5. [Infinite Flyer](Project-2-Phase-II/index.html)
 
@@ -78,7 +78,7 @@
 
 [Project-1-Phase-1](project-1-phase-1/index.html)
 
-[Project-1-Phase-2]
+[Project-1-Phase-2](project-1-phase-II/index.html)
 
 #### Project 2
 
