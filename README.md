@@ -58,11 +58,19 @@
 
 [Jungle Jump Player and Main Scene Sept 30](jungle_jump_and_main_09_30/index.html)
 
+<<<<<<< HEAD
 [Jungle Jump Base Level and Items Oct 2]()
 
 [Jungle Jump First Level Oct 4](jungle_jump_first_level_10_04/index.html)
 
 [Jungle Jump Scrolling Background Oct 7]()
+=======
+[Jungle Jump Base Level and Items Oct 2](final_jungle_jump/index.html)
+
+[Jungle Jump First Level Oct 4](jungle_jump_first_level_10_04/index.html)
+
+[Jungle Jump Scrolling Background Oct 7](final_jungle_jump/index.html)
+>>>>>>> 58c54a35d294d7cc2616d5745f26546942c77509
 
 ### Infinite Flyer
 
@@ -94,4 +102,8 @@
 
 [Team-Project-01](Team-Project-1/index.html)
 
+<<<<<<< HEAD
 [Team-Project-02]
+=======
+[Team-Project-02]()
+>>>>>>> 58c54a35d294d7cc2616d5745f26546942c77509
