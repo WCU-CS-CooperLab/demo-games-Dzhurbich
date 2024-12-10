@@ -88,7 +88,9 @@
 
 #### Project 3
 
-[Project-3-phase-3](project-3-phase-II/index.html)
+[Project-3-phase-1](space_rocks_completed_09_20/index.html)
+
+[Project-3-phase-2](project-3-phase-II/index.html)
 
 ### Group Projects
 
