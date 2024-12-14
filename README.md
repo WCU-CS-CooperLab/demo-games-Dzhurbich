@@ -14,7 +14,7 @@
 
 ### Coin Dash Game
 
-[Player Scene Aug 29](player_scene_08_29/index.html)
+[Player Scene Aug 29](player_scene_08_30/index.html)
 
 [Player Scene Aug 30](player_scene_08_30/index.html)
 
@@ -104,4 +104,4 @@
 
 [Team-Project-01](Team-Project-1/index.html)
 
-#### [Team Project-02](Team-Project-2/index.html)
+ [Team Project-02](team-project-2-working/index.html)
