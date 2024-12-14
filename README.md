@@ -58,11 +58,19 @@
 
 [Jungle Jump Player and Main Scene Sept 30](jungle_jump_and_main_09_30/index.html)
 
+
+[Jungle Jump Base Level and Items Oct 2]()
+
+[Jungle Jump First Level Oct 4](jungle_jump_first_level_10_04/index.html)
+
+[Jungle Jump Scrolling Background Oct 7]()
+
 [Jungle Jump Base Level and Items Oct 2](final_jungle_jump/index.html)
 
 [Jungle Jump First Level Oct 4](jungle_jump_first_level_10_04/index.html)
 
 [Jungle Jump Scrolling Background Oct 7](final_jungle_jump/index.html)
+
 
 ### Infinite Flyer
 
@@ -88,10 +96,12 @@
 
 #### Project 3
 
-[Project-3-phase-3](project-3-phase-II/index.html)
+[Project-3-phase-1](space_rocks_completed_09_20/index.html)
+
+[Project-3-phase-2](project-3-phase-II/index.html)
 
 ### Group Projects
 
 [Team-Project-01](Team-Project-1/index.html)
 
-[Team-Project-02]()
+#### [Team Project-02](Team-Project-2/index.html)

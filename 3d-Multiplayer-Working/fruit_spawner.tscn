@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://df6ay7r4i737a"]
+
+[ext_resource type="Script" path="res://fruit_spawner.gd" id="1_s0oxw"]
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_qxcnl"]
+
+[node name="FruitSpawner" type="Marker3D"]
+script = ExtResource("1_s0oxw")
+
+[node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
+_spawnable_scenes = PackedStringArray("res://Fruit/apple.tscn")
+spawn_path = NodePath("..")
+
+[node name="FruitTimer" type="Timer" parent="."]
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_qxcnl")
+
+[connection signal="timeout" from="FruitTimer" to="." method="_on_fruit_timer_timeout"]

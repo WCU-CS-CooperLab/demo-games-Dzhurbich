@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://y6qcgsfs8ds5"
+path="res://.godot/imported/Anoying Orange.mtl.obj-0f0c997b05efc2d279e9f7921885b9cf.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Anoying Orange.mtl.obj-0f0c997b05efc2d279e9f7921885b9cf.mesh"]
+
+source_file="res://assets/Fruit/Annoying Apple/Anoying Orange.mtl.obj"
+dest_files=["res://.godot/imported/Anoying Orange.mtl.obj-0f0c997b05efc2d279e9f7921885b9cf.mesh", "res://.godot/imported/Anoying Orange.mtl.obj-0f0c997b05efc2d279e9f7921885b9cf.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

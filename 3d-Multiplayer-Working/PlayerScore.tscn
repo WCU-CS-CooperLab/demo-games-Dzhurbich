@@ -1,0 +1,135 @@
+[gd_scene load_steps=5 format=3 uid="uid://dssjicbdinq0"]
+
+[ext_resource type="Script" path="res://player_score.gd" id="1_s4uw3"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_0sppj"]
+font_size = 40
+
+[sub_resource type="LabelSettings" id="LabelSettings_ylnox"]
+font_size = 56
+
+[sub_resource type="LabelSettings" id="LabelSettings_wttdi"]
+font_size = 30
+
+[node name="PlayerScore" type="Control"]
+layout_mode = 3
+anchor_left = 0.5
+anchor_top = 0.068
+anchor_right = 0.5
+anchor_bottom = 0.068
+offset_left = -259.0
+offset_top = -41.064
+offset_right = 141.0
+offset_bottom = 599.936
+grow_horizontal = 2
+grow_vertical = 0
+script = ExtResource("1_s4uw3")
+
+[node name="P1Score" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.154
+anchor_top = 0.059
+anchor_right = 0.154
+anchor_bottom = 0.059
+offset_left = 537.4
+offset_top = -39.819
+offset_right = 629.4
+offset_bottom = 15.181
+grow_horizontal = 2
+text = "P1: 0"
+label_settings = SubResource("LabelSettings_0sppj")
+
+[node name="P2Score" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.404
+anchor_top = 0.059
+anchor_right = 0.404
+anchor_bottom = 0.059
+offset_left = 555.4
+offset_top = -37.819
+offset_right = 647.4
+offset_bottom = 17.181
+grow_horizontal = 2
+text = "P2: 0"
+label_settings = SubResource("LabelSettings_0sppj")
+
+[node name="P3Score" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.654
+anchor_top = 0.059
+anchor_right = 0.654
+anchor_bottom = 0.059
+offset_left = 572.4
+offset_top = -36.819
+offset_right = 664.4
+offset_bottom = 18.181
+grow_horizontal = 2
+text = "P3: 0"
+label_settings = SubResource("LabelSettings_0sppj")
+
+[node name="P4Score" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.904
+anchor_top = 0.059
+anchor_right = 0.904
+anchor_bottom = 0.059
+offset_left = 590.4
+offset_top = -35.819
+offset_right = 682.4
+offset_bottom = 19.181
+grow_horizontal = 2
+text = "P4: 0"
+label_settings = SubResource("LabelSettings_0sppj")
+
+[node name="WinnerLabel" type="Label" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.426
+anchor_right = 0.5
+anchor_bottom = 0.426
+offset_left = -19.0
+offset_top = -10.066
+offset_right = 21.0
+offset_bottom = 12.934
+grow_horizontal = 2
+grow_vertical = 2
+label_settings = SubResource("LabelSettings_ylnox")
+
+[node name="Restart" type="Button" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -37.5
+offset_top = -31.0
+offset_right = 37.5
+grow_horizontal = 2
+grow_vertical = 0
+text = "RESTART"
+
+[node name="TimerLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -702.0
+offset_top = 12.0
+offset_right = -603.0
+offset_bottom = 54.0
+grow_horizontal = 0
+label_settings = SubResource("LabelSettings_wttdi")
+
+[node name="GameTimer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="pressed" from="Restart" to="." method="_on_restart_pressed"]
+[connection signal="timeout" from="GameTimer" to="." method="_on_game_timer_timeout"]
